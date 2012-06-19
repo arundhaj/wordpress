@@ -28,9 +28,7 @@ function my_script_style() {
 	$my_plugin = WP_PLUGIN_URL . '/my-script-style/';
 	$url = $my_plugin . 'wp_mystyle.css';
 
-	echo "\n\n<!-- your plugin css styles -->\n";
     echo "<link rel='stylesheet' type='text/css' href='$url'>\n";
-    echo "<!-- /your plugin css styles -->\n\n";
 }
 
 add_action('wp_head', 'my_script_style');
