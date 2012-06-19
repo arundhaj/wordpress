@@ -26,7 +26,7 @@ if (!defined("WP_PLUGIN_URL"))  define("WP_PLUGIN_URL",  WP_CONTENT_URL        .
 
 function my_script_style() {
 	$my_plugin = WP_PLUGIN_URL . '/my-script-style/';
-	$url = $my_plugin . '/wp_mystyle.css';
+	$url = $my_plugin . 'wp_mystyle.css';
 
 	echo "\n\n<!-- your plugin css styles -->\n";
     echo "<link rel='stylesheet' type='text/css' href='$url'>\n";
